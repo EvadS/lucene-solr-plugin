@@ -33,11 +33,10 @@ public class LuceneTest {
     private static final String TEST_FIELD_NAME = "test";
 
     @Test
-    public void testDialogueAnalyzer() throws IOException, ParseException {
+    public void testDialogueAnalyzer() throws IOException {
         Analyzer dialogue = CustomAnalyzers.dialogue();
 
         TokenStream stream = dialogue.tokenStream(TEST_FIELD_NAME, "Here is a \"phrase that has been quoted\", plus extra stuff \"also quoted\" after it.");
-
         stream.reset();
 
         int tokenCount = 0;

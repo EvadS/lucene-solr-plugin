@@ -5,9 +5,6 @@ import org.apache.lucene.analysis.*;
 
 import java.io.IOException;
 
-/**
- * Created by dmitry on 6/9/14.
- */
 public class TestMindBlowingTokenFilter extends BaseTokenStreamTestCase {
 
     Analyzer analyzer = new Analyzer() {
@@ -20,7 +17,6 @@ public class TestMindBlowingTokenFilter extends BaseTokenStreamTestCase {
             return new TokenStreamComponents(source, filter);
         }
     };
-
 
     public void testPositionIncrementsSingleTerm() throws IOException {
 

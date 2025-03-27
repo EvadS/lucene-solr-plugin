@@ -8,13 +8,12 @@ import org.apache.lucene.analysis.tokenattributes.PositionLengthAttribute;
 
 import java.io.IOException;
 
-/**
- * Created by dmitry on 6/9/14.
- */
+
 public final class MindBlowingTokenFilter extends TokenFilter {
 
     private final CharTermAttribute termAtt;
     private final PositionIncrementAttribute posAtt;
+
     // dummy thing, is needed for complying with BaseTokenStreamTestCase assertions
     private PositionLengthAttribute posLenAtt; // don't remove this, otherwise the low-level test will fail
 
