@@ -81,6 +81,7 @@
   <!--
      <lib path="../a-jar-that-does-not-exist.jar" />
   -->
+  <lib dir="${solr.install.dir:../../../..}/custom_lib/" regex=".*\.jar" />
 
   <!-- Data Directory
 

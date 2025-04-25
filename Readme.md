@@ -9,6 +9,10 @@ move to solr plugin code directory and build with maven
 ```
 then move  **se-plugin.jar* from target directory to ${SOLR_HOME}\custom_lib folder
 
+№№ check lib is working
+${DOLR_HOME}\server\logs\solr.log
+
+
 ### Solr base command
 #### run solr instance
 ```cmd
