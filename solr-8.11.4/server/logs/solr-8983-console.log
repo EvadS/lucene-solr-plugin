@@ -1,0 +1,5 @@
+2025-04-25 12:45:21.094 INFO  (main) [   ] o.e.j.u.log Logging initialized @754ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-04-25 12:45:21.246 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.53.v20231009; built: 2023-10-09T12:29:09.265Z; git: 27bde00a0b95a1d5bbee0eae7984f891d2d0f8c9; jvm 11+28
+2025-04-25 12:45:21.253 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///D:/project/homeproject/lucene-solr-plugin/solr-8.11.4/server/contexts/] at interval 0
+2025-04-25 12:45:21.484 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2025-04-25 12:45:21.491 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
