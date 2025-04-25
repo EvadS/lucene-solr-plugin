@@ -281,6 +281,7 @@
     </analyzer>
     <analyzer type="query">
       <filter class="com.se.sample.filter.DebugTokenFilterFactory"/>
+      <filter class="com.se.sample.filter.ReverseFilterFactory"/>
       <tokenizer class="solr.StandardTokenizerFactory"/>
       <filter class="solr.StopFilterFactory" words="stopwords.txt" ignoreCase="true"/>
       <filter class="solr.SynonymGraphFilterFactory" expand="true" ignoreCase="true" synonyms="synonyms.txt"/>
