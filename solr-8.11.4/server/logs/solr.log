@@ -1,109 +1,70 @@
-2025-04-25 13:07:55.112 INFO  (main) [   ] o.e.j.u.log Logging initialized @783ms to org.eclipse.jetty.util.log.Slf4jLog
-2025-04-25 13:07:55.290 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.53.v20231009; built: 2023-10-09T12:29:09.265Z; git: 27bde00a0b95a1d5bbee0eae7984f891d2d0f8c9; jvm 11+28
-2025-04-25 13:07:55.298 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///D:/project/homeproject/lucene-solr-plugin/solr-8.11.4/server/contexts/] at interval 0
-2025-04-25 13:07:55.541 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2025-04-25 13:07:55.548 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2025-04-25 13:07:55.548 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2025-04-25 13:07:55.549 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
-2025-04-25 13:07:55.586 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2025-04-25 13:07:55.590 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.11.4
-2025-04-25 13:07:55.590 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2025-04-25 13:07:55.590 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: D:\project\homeproject\lucene-solr-plugin\solr-8.11.4
-2025-04-25 13:07:55.590 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2025-04-25T13:07:55.590893300Z
-2025-04-25 13:07:55.611 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: D:\project\homeproject\lucene-solr-plugin\solr-8.11.4\server\solr
-2025-04-25 13:07:55.611 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\project\homeproject\lucene-solr-plugin\solr-8.11.4\server\solr\solr.xml
-2025-04-25 13:07:55.670 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@19e4fcac, but no JMX reporters were configured - adding default JMX reporter.
-2025-04-25 13:07:56.180 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2025-04-25 13:07:56.277 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@1b956cfa[provider=null,keyStore=null,trustStore=null]
-2025-04-25 13:07:56.278 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@1b956cfa[provider=null,keyStore=null,trustStore=null]
-2025-04-25 13:07:56.363 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@61ecbee9[provider=null,keyStore=null,trustStore=null]
-2025-04-25 13:07:56.363 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@61ecbee9[provider=null,keyStore=null,trustStore=null]
-2025-04-25 13:07:56.384 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2025-04-25 13:07:56.467 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
-2025-04-25 13:07:56.474 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2025-04-25 13:07:56.516 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@19e4fcac
-2025-04-25 13:07:56.516 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@19e4fcac
-2025-04-25 13:07:56.517 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@19e4fcac
-2025-04-25 13:07:56.536 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath D:\project\homeproject\lucene-solr-plugin\solr-8.11.4\server\solr
-2025-04-25 13:07:56.536 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [books]
-2025-04-25 13:07:56.571 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/D:/project/homeproject/lucene-solr-plugin/solr-8.11.4/custom_lib]
-2025-04-25 13:07:56.701 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.4
-2025-04-25 13:07:56.724 WARN  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
-2025-04-25 13:07:56.782 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.s.IndexSchema Schema name=default-config
-2025-04-25 13:07:56.939 WARN  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
-2025-04-25 13:07:56.939 WARN  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
-2025-04-25 13:07:56.940 WARN  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
-2025-04-25 13:07:56.940 WARN  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
-2025-04-25 13:07:56.940 WARN  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
-2025-04-25 13:07:56.959 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@56bc3fac{/solr,file:///D:/project/homeproject/lucene-solr-plugin/solr-8.11.4/server/solr-webapp/webapp/,AVAILABLE}{D:\project\homeproject\lucene-solr-plugin\solr-8.11.4\server/solr-webapp/webapp}
-2025-04-25 13:07:56.975 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@6d6bc158{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
-2025-04-25 13:07:56.976 INFO  (main) [   ] o.e.j.s.Server Started @2648ms
-2025-04-25 13:07:57.194 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2025-04-25 13:07:57.228 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.c.CoreContainer Creating SolrCore 'books' using configuration from instancedir D:\project\homeproject\lucene-solr-plugin\solr-8.11.4\server\solr\books, trusted=true
-2025-04-25 13:07:57.299 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.books' (registry 'solr.core.books') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@19e4fcac
-2025-04-25 13:07:57.316 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.c.SolrCore [[books] ] Opening new SolrCore at [D:\project\homeproject\lucene-solr-plugin\solr-8.11.4\server\solr\books], dataDir=[D:\project\homeproject\lucene-solr-plugin\solr-8.11.4\server\solr\books\data\]
-2025-04-25 13:07:57.354 INFO  (qtp1756819670-24) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?wt=json)
-2025-04-25 13:07:57.443 INFO  (qtp1756819670-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=91
-2025-04-25 13:07:57.736 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2025-04-25 13:07:57.737 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2025-04-25 13:07:57.750 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2025-04-25 13:07:57.750 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2025-04-25 13:07:57.844 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\project\homeproject\lucene-solr-plugin\solr-8.11.4\server\solr\books\conf
-2025-04-25 13:07:57.852 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2025-04-25 13:07:57.857 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
-2025-04-25 13:07:57.863 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2025-04-25 13:07:57.874 INFO  (searcherExecutor-15-thread-1-processing-x:books) [   x:books] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2025-04-25 13:07:57.874 INFO  (searcherExecutor-15-thread-1-processing-x:books) [   x:books] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2025-04-25 13:07:57.878 INFO  (searcherExecutor-15-thread-1-processing-x:books) [   x:books] o.a.s.c.SolrCore [books]  Registered new searcher autowarm time: 0 ms
-2025-04-25 13:08:40.532 INFO  (qtp1756819670-19) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/?null)
-2025-04-25 13:08:40.727 INFO  (qtp1756819670-17) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/books/admin/system?_=1745586520723&wt=json)
-2025-04-25 13:08:40.727 INFO  (qtp1756819670-42) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/books/replication?_=1745586520723&command=details&wt=json)
-2025-04-25 13:08:40.727 INFO  (qtp1756819670-25) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1745586520696&indexInfo=false&wt=json)
-2025-04-25 13:08:40.727 INFO  (qtp1756819670-19) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/books/admin/ping?_=1745586520697&action=status&ts=1745586520697&wt=json)
-2025-04-25 13:08:40.727 INFO  (qtp1756819670-41) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/books/admin/luke?_=1745586520723&numTerms=0&show=index&wt=json)
-2025-04-25 13:08:40.727 INFO  (qtp1756819670-26) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1745586520696&wt=json)
-2025-04-25 13:08:40.728 INFO  (qtp1756819670-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1745586520696} status=0 QTime=1
-2025-04-25 13:08:40.730 INFO  (qtp1756819670-19) [   x:books] o.a.s.c.S.Request [books]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1745586520697&ts=1745586520697} status=503 QTime=2
-2025-04-25 13:08:40.732 INFO  (qtp1756819670-42) [   x:books] o.a.s.c.S.Request [books]  webapp=/solr path=/replication params={wt=json&command=details&_=1745586520723} status=0 QTime=4
-2025-04-25 13:08:40.738 INFO  (qtp1756819670-41) [   x:books] o.a.s.c.S.Request [books]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1745586520723} status=0 QTime=10
-2025-04-25 13:08:40.805 INFO  (qtp1756819670-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1745586520696} status=0 QTime=77
-2025-04-25 13:08:40.807 INFO  (qtp1756819670-17) [   x:books] o.a.s.c.S.Request [books]  webapp=/solr path=/admin/system params={wt=json&_=1745586520723} status=0 QTime=79
-2025-04-25 13:09:23.058 INFO  (qtp1756819670-23) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1745586520696&indexInfo=false&wt=json)
-2025-04-25 13:09:23.058 INFO  (qtp1756819670-41) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1745586520696&wt=json)
-2025-04-25 13:09:23.058 INFO  (qtp1756819670-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1745586520696} status=0 QTime=0
-2025-04-25 13:09:23.059 INFO  (qtp1756819670-17) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/books/admin/luke?_=1745586520723&show=schema&wt=json)
-2025-04-25 13:09:23.082 INFO  (qtp1756819670-17) [   x:books] o.a.s.c.S.Request [books]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1745586520723} status=0 QTime=23
-2025-04-25 13:09:23.096 INFO  (qtp1756819670-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1745586520696} status=0 QTime=37
-2025-04-25 13:09:35.912 INFO  (qtp1756819670-23) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1745586520696&indexInfo=false&wt=json)
-2025-04-25 13:09:35.913 INFO  (qtp1756819670-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1745586520696} status=0 QTime=0
-2025-04-25 13:09:35.913 INFO  (qtp1756819670-17) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1745586520696&wt=json)
-2025-04-25 13:09:35.913 INFO  (qtp1756819670-26) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/books/admin/luke?_=1745586520723&show=schema&wt=json)
-2025-04-25 13:09:35.914 INFO  (qtp1756819670-26) [   x:books] o.a.s.c.S.Request [books]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1745586520723} status=0 QTime=1
-2025-04-25 13:09:35.922 INFO  (qtp1756819670-20) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/books/analysis/field?_=1745586563042&analysis.fieldtype=text_general&analysis.fieldvalue=test+string&analysis.showmatch=true&verbose_output=1&wt=json)
-2025-04-25 13:09:35.922 INFO  (qtp1756819670-20) [   x:books] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /analysis/field,class = solr.FieldAnalysisRequestHandler,attributes = {class=solr.FieldAnalysisRequestHandler, startup=lazy, useParams=_ANALYSIS_FIELD, name=/analysis/field},args = {startup=lazy,useParams=_ANALYSIS_FIELD}} 
-2025-04-25 13:09:35.970 INFO  (qtp1756819670-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1745586520696} status=0 QTime=58
-2025-04-25 13:09:35.979 INFO  (qtp1756819670-20) [   x:books] o.a.s.c.S.Request [books]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=test+string&analysis.showmatch=true&verbose_output=1&wt=json&_=1745586563042&analysis.fieldtype=text_general} status=0 QTime=56
-2025-04-25 13:10:53.876 INFO  (qtp1756819670-17) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1745586520696&indexInfo=false&wt=json)
-2025-04-25 13:10:53.877 INFO  (qtp1756819670-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1745586520696} status=0 QTime=0
-2025-04-25 13:10:53.879 INFO  (qtp1756819670-18) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/books/admin/luke?_=1745586520723&show=schema&wt=json)
-2025-04-25 13:10:53.880 INFO  (qtp1756819670-18) [   x:books] o.a.s.c.S.Request [books]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1745586520723} status=0 QTime=1
-2025-04-25 13:10:53.883 INFO  (qtp1756819670-17) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/books/analysis/field?_=1745586563042&analysis.fieldtype=text_general&analysis.fieldvalue=test+string&analysis.query=test+string&analysis.showmatch=true&verbose_output=1&wt=json)
-2025-04-25 13:10:53.887 INFO  (qtp1756819670-41) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1745586520696&wt=json)
-2025-04-25 13:10:53.888 INFO  (qtp1756819670-17) [   x:books] c.s.s.f.DebugTokenFilter debug, term = test, type = <ALPHANUM>, payload =, offset = , length = , increment = 
-2025-04-25 13:10:53.889 INFO  (qtp1756819670-17) [   x:books] c.s.s.f.DebugTokenFilter debug, term = string, type = <ALPHANUM>, payload =, offset = , length = , increment = 
-2025-04-25 13:10:53.889 INFO  (qtp1756819670-17) [   x:books] c.s.s.f.DebugTokenFilter debug, term = test, type = <ALPHANUM>, payload =, offset = , length = , increment = 
-2025-04-25 13:10:53.889 INFO  (qtp1756819670-17) [   x:books] c.s.s.f.DebugTokenFilter debug, term = string, type = <ALPHANUM>, payload =, offset = , length = , increment = 
-2025-04-25 13:10:53.890 INFO  (qtp1756819670-17) [   x:books] o.a.s.c.S.Request [books]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=test+string&analysis.showmatch=true&verbose_output=1&analysis.query=test+string&wt=json&_=1745586563042&analysis.fieldtype=text_general} status=0 QTime=7
-2025-04-25 13:10:53.933 INFO  (qtp1756819670-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1745586520696} status=0 QTime=45
-2025-04-25 13:12:18.992 INFO  (qtp1756819670-19) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1745586520696&indexInfo=false&wt=json)
-2025-04-25 13:12:18.993 INFO  (qtp1756819670-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1745586520696} status=0 QTime=0
-2025-04-25 13:12:18.994 INFO  (qtp1756819670-26) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/books/admin/luke?_=1745586520723&show=schema&wt=json)
-2025-04-25 13:12:18.995 INFO  (qtp1756819670-26) [   x:books] o.a.s.c.S.Request [books]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1745586520723} status=0 QTime=1
-2025-04-25 13:12:18.997 INFO  (qtp1756819670-23) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1745586520696&wt=json)
-2025-04-25 13:12:19.006 INFO  (qtp1756819670-19) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/books/analysis/field?_=1745586563042&analysis.fieldtype=text_general&analysis.fieldvalue=test+string+my+vcb++dfg+ddfg+sdf+sdsfg&analysis.query=test+string&analysis.showmatch=true&verbose_output=1&wt=json)
-2025-04-25 13:12:19.006 INFO  (qtp1756819670-19) [   x:books] c.s.s.f.DebugTokenFilter debug, term = test, type = <ALPHANUM>, payload =, offset = , length = , increment = 
-2025-04-25 13:12:19.007 INFO  (qtp1756819670-19) [   x:books] c.s.s.f.DebugTokenFilter debug, term = string, type = <ALPHANUM>, payload =, offset = , length = , increment = 
-2025-04-25 13:12:19.007 INFO  (qtp1756819670-19) [   x:books] c.s.s.f.DebugTokenFilter debug, term = test, type = <ALPHANUM>, payload =, offset = , length = , increment = 
-2025-04-25 13:12:19.007 INFO  (qtp1756819670-19) [   x:books] c.s.s.f.DebugTokenFilter debug, term = string, type = <ALPHANUM>, payload =, offset = , length = , increment = 
-2025-04-25 13:12:19.008 INFO  (qtp1756819670-19) [   x:books] o.a.s.c.S.Request [books]  webapp=/solr path=/analysis/field params={analysis.fieldvalue=test+string+my+vcb++dfg+ddfg+sdf+sdsfg&analysis.showmatch=true&verbose_output=1&analysis.query=test+string&wt=json&_=1745586563042&analysis.fieldtype=text_general} status=0 QTime=2
-2025-04-25 13:12:19.045 INFO  (qtp1756819670-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1745586520696} status=0 QTime=47
+2025-10-26 13:28:58.492 INFO  (main) [   ] o.e.j.u.log Logging initialized @880ms to org.eclipse.jetty.util.log.Slf4jLog
+2025-10-26 13:28:58.664 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.53.v20231009; built: 2023-10-09T12:29:09.265Z; git: 27bde00a0b95a1d5bbee0eae7984f891d2d0f8c9; jvm 17+35-2724
+2025-10-26 13:28:58.673 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///D:/project/homeproject/solr/lucene-solr-plugin/solr-8.11.4/server/contexts/] at interval 0
+2025-10-26 13:28:59.026 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2025-10-26 13:28:59.034 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2025-10-26 13:28:59.034 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2025-10-26 13:28:59.035 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2025-10-26 13:28:59.072 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2025-10-26 13:28:59.076 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.11.4
+2025-10-26 13:28:59.076 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2025-10-26 13:28:59.076 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: D:\project\homeproject\solr\lucene-solr-plugin\solr-8.11.4
+2025-10-26 13:28:59.076 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2025-10-26T13:28:59.076014900Z
+2025-10-26 13:28:59.085 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: D:\project\homeproject\solr\lucene-solr-plugin\solr-8.11.4\server\solr
+2025-10-26 13:28:59.086 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\project\homeproject\solr\lucene-solr-plugin\solr-8.11.4\server\solr\solr.xml
+2025-10-26 13:28:59.156 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@491b9b8, but no JMX reporters were configured - adding default JMX reporter.
+2025-10-26 13:28:59.492 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2025-10-26 13:28:59.692 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@4edef76c[provider=null,keyStore=null,trustStore=null]
+2025-10-26 13:28:59.693 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@4edef76c[provider=null,keyStore=null,trustStore=null]
+2025-10-26 13:28:59.788 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@57272109[provider=null,keyStore=null,trustStore=null]
+2025-10-26 13:28:59.788 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@57272109[provider=null,keyStore=null,trustStore=null]
+2025-10-26 13:28:59.815 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2025-10-26 13:28:59.898 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2025-10-26 13:28:59.904 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2025-10-26 13:28:59.941 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@491b9b8
+2025-10-26 13:28:59.941 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@491b9b8
+2025-10-26 13:28:59.942 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@491b9b8
+2025-10-26 13:28:59.962 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath D:\project\homeproject\solr\lucene-solr-plugin\solr-8.11.4\server\solr
+2025-10-26 13:28:59.963 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [books]
+2025-10-26 13:28:59.987 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/D:/project/homeproject/solr/lucene-solr-plugin/solr-8.11.4/custom_lib]
+2025-10-26 13:29:00.106 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.4
+2025-10-26 13:29:00.126 WARN  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2025-10-26 13:29:00.167 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.s.IndexSchema Schema name=default-config
+2025-10-26 13:29:00.274 WARN  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2025-10-26 13:29:00.274 WARN  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2025-10-26 13:29:00.274 WARN  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2025-10-26 13:29:00.274 WARN  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2025-10-26 13:29:00.274 WARN  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2025-10-26 13:29:00.335 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@6e46d9f4{/solr,file:///D:/project/homeproject/solr/lucene-solr-plugin/solr-8.11.4/server/solr-webapp/webapp/,AVAILABLE}{D:\project\homeproject\solr\lucene-solr-plugin\solr-8.11.4\server/solr-webapp/webapp}
+2025-10-26 13:29:00.348 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@2fea7088{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2025-10-26 13:29:00.348 INFO  (main) [   ] o.e.j.s.Server Started @2737ms
+2025-10-26 13:29:00.372 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2025-10-26 13:29:00.395 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.c.CoreContainer Creating SolrCore 'books' using configuration from instancedir D:\project\homeproject\solr\lucene-solr-plugin\solr-8.11.4\server\solr\books, trusted=true
+2025-10-26 13:29:00.415 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.books' (registry 'solr.core.books') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@491b9b8
+2025-10-26 13:29:00.425 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.c.SolrCore [[books] ] Opening new SolrCore at [D:\project\homeproject\solr\lucene-solr-plugin\solr-8.11.4\server\solr\books], dataDir=[D:\project\homeproject\solr\lucene-solr-plugin\solr-8.11.4\server\solr\books\data\]
+2025-10-26 13:29:00.796 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2025-10-26 13:29:00.797 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2025-10-26 13:29:00.810 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2025-10-26 13:29:00.810 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2025-10-26 13:29:00.905 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\project\homeproject\solr\lucene-solr-plugin\solr-8.11.4\server\solr\books\conf
+2025-10-26 13:29:00.915 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2025-10-26 13:29:00.919 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2025-10-26 13:29:00.926 INFO  (coreLoadExecutor-13-thread-1) [   x:books] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2025-10-26 13:29:00.937 INFO  (searcherExecutor-15-thread-1-processing-x:books) [   x:books] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2025-10-26 13:29:00.937 INFO  (searcherExecutor-15-thread-1-processing-x:books) [   x:books] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2025-10-26 13:29:00.941 INFO  (searcherExecutor-15-thread-1-processing-x:books) [   x:books] o.a.s.c.SolrCore [books]  Registered new searcher autowarm time: 0 ms
+2025-10-26 13:29:03.579 INFO  (qtp1703009290-26) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?wt=json)
+2025-10-26 13:29:03.614 INFO  (qtp1703009290-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=35
+2025-10-26 13:29:41.071 INFO  (qtp1703009290-21) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/?null)
+2025-10-26 13:29:42.132 INFO  (qtp1703009290-26) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/books/replication?_=1761485382127&command=details&wt=json)
+2025-10-26 13:29:42.132 INFO  (qtp1703009290-25) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/info/system?_=1761485382019&wt=json)
+2025-10-26 13:29:42.132 INFO  (qtp1703009290-28) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/books/admin/luke?_=1761485382127&numTerms=0&show=index&wt=json)
+2025-10-26 13:29:42.132 INFO  (qtp1703009290-20) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/books/admin/ping?_=1761485382019&action=status&ts=1761485382019&wt=json)
+2025-10-26 13:29:42.132 INFO  (qtp1703009290-24) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/books/admin/system?_=1761485382127&wt=json)
+2025-10-26 13:29:42.134 INFO  (qtp1703009290-20) [   x:books] o.a.s.c.S.Request [books]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1761485382019&ts=1761485382019} status=503 QTime=1
+2025-10-26 13:29:42.137 INFO  (qtp1703009290-28) [   x:books] o.a.s.c.S.Request [books]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1761485382127} status=0 QTime=5
+2025-10-26 13:29:42.137 INFO  (qtp1703009290-26) [   x:books] o.a.s.c.S.Request [books]  webapp=/solr path=/replication params={wt=json&command=details&_=1761485382127} status=0 QTime=5
+2025-10-26 13:29:42.132 INFO  (qtp1703009290-43) [   ] o.a.s.s.HttpSolrCall HttpSolrCall.init(http://localhost:8983/solr/admin/cores?_=1761485382019&indexInfo=false&wt=json)
+2025-10-26 13:29:42.145 INFO  (qtp1703009290-43) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1761485382019} status=0 QTime=13
+2025-10-26 13:29:42.199 INFO  (qtp1703009290-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1761485382019} status=0 QTime=66
+2025-10-26 13:29:42.206 INFO  (qtp1703009290-24) [   x:books] o.a.s.c.S.Request [books]  webapp=/solr path=/admin/system params={wt=json&_=1761485382127} status=0 QTime=73
