@@ -113,6 +113,7 @@ REM set SOLR_JETTY_HOST=0.0.0.0
 
 REM Sets the port Solr binds to, default is 8983
 REM set SOLR_PORT=8983
+set SOLR_PORT=18983
 
 REM Restrict access to solr by IP address.
 REM Specify a comma-separated list of addresses or networks, for example:
@@ -213,3 +214,5 @@ REM set SOLR_OPTS=%SOLR_OPTS% -Dsolr.allowPaths=D:\,E:\other\path
 REM Some previous versions of Solr use an outdated log4j dependency. If you are unable to use at least log4j version 2.15.0
 REM then enable the following setting to address CVE-2021-44228
 REM set SOLR_OPTS=%SOLR_OPTS% -Dlog4j2.formatMsgNoLookups=true
+
+  set SOLR_OPTS=%SOLR_OPTS% -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005
